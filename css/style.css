@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f7f7f7;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+.intro,
+.box,
+.product,
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 8px 14px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.product img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+  color: #555;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .list-grid {
+    grid-template-columns: 1fr;
+  }
+}
