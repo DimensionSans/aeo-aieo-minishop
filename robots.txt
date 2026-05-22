@@ -7,4 +7,4 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://github.com/DimensionSans/aeo-aieo-minishop.git/sitemap.xml
+Sitemap: https://dimensionsans.github.io/aeo-aieo-minishop/
